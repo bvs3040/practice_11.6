@@ -22,7 +22,7 @@
 
             <div class="data">
                 <div class="myImg">
-                    <?php  echo '<img src="img/php.jpg">'; ?>                    
+                    <?php  echo '<img src="img/photo.png">'; ?>                    
                 </div>
 
                 <div class="fullname">
@@ -41,15 +41,12 @@
                       $x<input name="firstVariable" type="number" value="16" /><br><br>
                       $y<input name="secondVariable" type="number"  value="7" /><br><br>
                         <input type=submit value="Ввести">
-                    </form><br><br>
-                    
-                                     
+                    </form><br><br>                               
                 </div>
             </div>
 
             <div class="knowledge">
-                    
-                                                 
+                                                                     
                     <?php  include 'knowledge.inc.php'; ?><br>
 
                     <?php  echo 'тип переменной x: ' . gettype($x); ?><br>
@@ -62,15 +59,16 @@
 
                     <?php echo  'Время выполнения скрипта: ' . (microtime(true) - $start) . ' sec.';?><br>
                      
-                    <?php include 'grade.inc.php'; ?>
-
+                    <?php include 'grade.inc.php'; ?><br>
+                                      
             </div>
-
-            <div class="article">
+                        
+        </div>
+        
+        <div class="article">
                 <p class="text">
                   <?php echo $str;?>
                 </p>
-            </div>
         </div>
 
             <?php include 'footer.inc.php' ?>

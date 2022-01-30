@@ -19,7 +19,7 @@ h2 {
     max-width: 1200px;
     background-color: #E6E6E6;
     padding: 5px;
-    height: 100%;
+   
 }
 
 .header {
@@ -28,7 +28,7 @@ h2 {
     justify-content: space-between;
     height: 25%;
     margin-bottom: 3em;
-    background-color: #CED8F6;
+    background-color: #caf1ca;
 }
 
 ul  {
@@ -79,10 +79,17 @@ li a {
 .knowledge {
     display: flex;   
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 .article {
-    margin-top: 2em;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    margin-bottom: 1em;
+    background-color: #d5d8d5;
+   
 }
 
 
@@ -109,6 +116,6 @@ h1 {
 }
 
 .footer {
-    background-color: #f8a16e;
+    background-color: #aae7ae;
     flex: 0 0 auto;
 }
