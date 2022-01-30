@@ -11,7 +11,8 @@
     <div class="flex-container">
 
         <div class="header">     
-               <?php include 'logo.inc.php' ?>         
+               <?php $start = microtime(true);
+                include 'logo.inc.php'; ?>         
                <?php include 'menu.inc.php' ?>	   
         </div>       
      
@@ -21,7 +22,7 @@
 
             <div class="data">
                 <div class="myImg">
-                    <?php  echo '<img src="/img/php.jpg">'; ?>                    
+                    <?php  echo '<img src="img/php.jpg">'; ?>                    
                 </div>
 
                 <div class="fullname">
@@ -33,33 +34,41 @@
                     <p> Мне
                     <?php  echo $age;   ?>          
                     лет </p>
-                    <p> Мы научились создавать переменные </p>
-                    <p> Изучили простые операции с ними </p>
+                    <p> <?php echo $q; ?> </p>
+                    <p> Введите две переменные </p>
+
+                    <form method="post" action="index.php">
+                      $x<input name="firstVariable" type="number" value="16" /><br><br>
+                      $y<input name="secondVariable" type="number"  value="7" /><br><br>
+                        <input type=submit value="Ввести">
+                    </form><br><br>
+                    
+                                     
                 </div>
             </div>
 
             <div class="knowledge">
-                                   
-                    <?php  include 'knowledge.inc.php'; ?>
+                    
+                                                 
+                    <?php  include 'knowledge.inc.php'; ?><br>
+
+                    <?php  echo 'тип переменной x: ' . gettype($x); ?><br>
+                   
                     <?php   echo $a, ' ', $b, ' ', $c; ?> <br>
-                                       
-                    <?php
-                        $a = 10;
-                        $b = 20;
-                        $c = $a + $b;
-                        echo $c;
-                    ?>   <br>                
-                     <?php
-                        echo $d;
-                    ?> 
+                                        
+                    <?php echo $d;?><br>
+
+                    <?php echo 'Путь до директории ',__DIR__ ;?><br>
+
+                    <?php echo  'Время выполнения скрипта: ' . (microtime(true) - $start) . ' sec.';?><br>
+                     
+                    <?php include 'grade.inc.php'; ?>
 
             </div>
 
             <div class="article">
                 <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Recusandae asperiores ducimus dolore explicabo. Animi est amet quibusdam molestias! 
-                    Minus laudantium sapiente dignissimos possimus natus cumque delectus sed, accusantium totam quia?
+                  <?php echo $str;?>
                 </p>
             </div>
         </div>
