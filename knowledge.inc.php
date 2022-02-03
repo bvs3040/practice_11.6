@@ -1,18 +1,26 @@
 <?php
-$x = $_POST["firstVariable"];
-$y = $_POST["secondVariable"];
+if (!empty($_POST["firstVariable"])) {
+  $x = $_POST["firstVariable"];
+} else {
+    $x=0;
+  } 
+
+if (!empty($_POST["secondVariable"])) {
+  $y = $_POST["secondVariable"];
+} else {
+    $y=0;
+  }  
+
 echo "$x+$y= " . $x+$y;
 ?><br>
 
 <?php
-echo "'$x'+'$y'= " . "$x","$y";
+echo "'$x'+'$y'= " . "$x","$y"; 
 ?><br>
 
 <?php
 echo '($y=$y*$x)=($y*=$x)= ' . $y*=$x;
 ?><br>
-
-
 
 <?php
 $a = 'Мои знания на';

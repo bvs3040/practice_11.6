@@ -18,8 +18,7 @@ h2 {
     margin: 0 auto;
     max-width: 1200px;
     background-color: #E6E6E6;
-    padding: 5px;
-   
+    padding: 5px;   
 }
 
 .header {
@@ -72,14 +71,18 @@ li a {
 
 .myImg {
     margin-top: 150px;
+    margin-right: 20px;
     padding-left: 20px;
-    flex-basis: 450px;
+    flex-basis: 360px;
+    padding-right: 20;
 }
 
 .knowledge {
     display: flex;   
     justify-content: center;
     margin-bottom: 1em;
+    color: rgb(37, 112, 20);
+    font-size: 1.2rem;
 }
 
 .article {
@@ -88,8 +91,7 @@ li a {
     justify-content: space-between;
     height: 25%;
     margin-bottom: 1em;
-    background-color: #d5d8d5;
-   
+    background-color: #d5d8d5; 
 }
 
 
@@ -103,6 +105,7 @@ p {
     font-size: 1rem;
     color: #585858;
 }
+
 
 h2 {
     text-align: center;
@@ -118,4 +121,15 @@ h1 {
 .footer {
     background-color: #aae7ae;
     flex: 0 0 auto;
+}
+
+input{
+    color: rgb(37, 112, 20);
+    font-size: 1.2rem;
+    border: solid 2px #08298A;
+}
+
+form{
+    color: rgb(37, 112, 20);
+    font-size: 1.2rem;
 }

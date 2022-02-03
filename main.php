@@ -51,7 +51,7 @@
 
                     <?php  echo 'тип переменной x: ' . gettype($x); ?><br>
                    
-                    <?php   echo $a, ' ', $b, ' ', $c; ?> <br>
+                    <?php  echo $a, ' ', $b, ' ', $c; ?> <br>
                                         
                     <?php echo $d;?><br>
 
@@ -66,15 +66,15 @@
         </div>
         
         <div class="article">
-                <p class="text">
-                  <?php echo $str;?>
-                </p>
+            <p id="lorem" class="text">
+            <?php echo $str;?>
+            </p>
         </div>
 
             <?php include 'footer.inc.php' ?>
 
     </div>
-
+    <script src="index.js"></script>
 
 </body>
 </html>

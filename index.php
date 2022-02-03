@@ -1,5 +1,3 @@
-
-
 <?php 
  $p = 'Приветствую Вас на моей страничке!';
 ?>
@@ -22,7 +20,6 @@ $q = "Мы теперь можем создавать переменные! <br>
  Minus laudantium sapiente dignissimos possimus natus cumque delectus sed, accusantium totam quia? 
  EOD;
 ?>
-
 
 <?php
 include 'main.php';
